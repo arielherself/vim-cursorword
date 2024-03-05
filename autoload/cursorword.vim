@@ -33,7 +33,7 @@ function! cursorword#matchadd(...) abort
   let w:cursorword_match = 1
 endfunction
 
-let s:delay = get(g:, 'cursorword_delay', 50)
+let s:delay = get(g:, 'cursorword_delay', 0)
 if has('timers') && s:delay > 0
   let s:timer = 0
   function! cursorword#cursormoved() abort
